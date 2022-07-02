@@ -51,6 +51,19 @@ export default function Header({ className }) {
           >
             <FaBars />
           </button>
+          <NavigationMenu
+            id={styles['primary-navigation']}
+            className={navClasses}
+            menuLocation={MENUS.PRIMARY_LOCATION}
+          >
+            <li>
+              <Link href="/search">
+                <a>
+                  <FaSearch title="Search" role="img" />
+                </a>
+              </Link>
+            </li>
+          </NavigationMenu>
         </div>
       </div>
     </header>
